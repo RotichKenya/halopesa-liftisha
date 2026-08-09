@@ -4,7 +4,7 @@ let client;
 let db;
 
 // Database and collections
-const DB_NAME = 'liftisha_loan_platform1';
+const DB_NAME = 'liftisha_loan_platform';
 const COLLECTIONS = {
     ADMINS: 'admins',
     APPLICATIONS: 'applications',
